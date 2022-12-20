@@ -369,7 +369,7 @@ class CreateTable extends Migration
             $table->timestamps();
         });
 
-        if (!Schema::hasColumn('biblio_custom', 'customs_class'))
+        if (!Schema::hasColumn('biblio_custom', 'custom_class'))
         {
             Schema::table('biblio_custom', function(Blueprint $table){
                 $table->text('custom_class')->nullable()->add();
